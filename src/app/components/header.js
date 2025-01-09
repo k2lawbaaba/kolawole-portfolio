@@ -10,11 +10,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#EAF6F6] p-8 pb-20 gap-16 sm:px-20 w-full">
+    <div className="bg-[#f2f6f6] p-8 pb-20 gap-16 sm:px-20 w-full">
       <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] text-[16px] font-[500] w-full">
-        <Link href="#" className="rounded-[100%]">
+        <Link href="#" className="rounded-[100%] h-[40px]">
           <Image
-            src="/images/earth.png"
+            src="/images/Abbeey.jpg"
             alt="nav_image"
             height={50}
             width={50}

@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -11,13 +9,36 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #FAF7F0;
+    --background: #faf7f0;
     /* --foreground: #ededed; */
   }
 }
 
 body {
   /* color: var(--foreground); */
-  background: var(--background);
+  /* background: var(--background); */
+
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3C!-- Additional polygons here --%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%' height='100%'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%' height='100%'/%3E%3C/svg%3E");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+
+.littleLine::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 1rem);
+  height: 5px;
+  width: 6rem;
+  background: #7144d2;
+  border-style: none;
+  border-top-style: dotted;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
 }
