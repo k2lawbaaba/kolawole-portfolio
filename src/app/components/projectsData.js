@@ -28,7 +28,7 @@ const ProjectData = [
         name: "javascript & ES6",
         icon: "/images/javascript.svg",
       },
-      
+
       {
         name: "CSS3",
         icon: "/images/css.svg",
@@ -79,12 +79,8 @@ const ProjectData = [
   },
   {
     id: 3,
-    name: "Simple Banking App",
-    description: `EazyPay is a payment gateway website that enables users to make
-    payments online. I was responsible for the frontend development of the
-    website, focusing on the user interface and user experience. My
-    contributions included key features such as the payment dashboard,
-    payment history, and more.`,
+    name: "EazyBank App",
+    description: `This is a user-friendly banking app that allows users to register with their phone numbers, which serve as their account numbers. The app enables seamless in-app banking activities such as sending and receiving money between registered users and viewing transaction history.`,
     image: "/images/banking-app.png",
     url: "https://banking-app-ftov.onrender.com/",
     technologies: [
