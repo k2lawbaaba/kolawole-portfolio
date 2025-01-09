@@ -16,7 +16,9 @@ const Projects = () => {
             className="grid sm:grid-cols-2 grid-cols-1 gap-3 place-content-center sm:px-12"
             key={ind}
           >
-            <div className="p-6 text-left space-y-4">
+            <div
+              className={`p-6 text-left space-y-4 ${ind % 2 != 0 && "order-2"}`}
+            >
               <>
                 <h1 className="font-bold text-[22px] font-montserrat">
                   {project.name}
@@ -44,8 +46,7 @@ const Projects = () => {
                 ))}
               </div>
               <div className="flex items-center gap-8 mt-4">
-                {project.url &&
-                (
+                {project.url && (
                   <Link
                     href={project.url}
                     target="_blank"
@@ -55,8 +56,7 @@ const Projects = () => {
                     LIVE SITE
                   </Link>
                 )}
-                {project.githubUrl &&
-                (
+                {project.githubUrl && (
                   <Link
                     href={project.githubUrl}
                     target="_blank"
@@ -68,7 +68,7 @@ const Projects = () => {
                 )}
               </div>
             </div>
-            <div className="">
+            <div className={` ${ind % 2 == 0 && "order-1"} flex items-start justify-start`}>
               <Image src={project.image} height={600} width={600} alt="" />
             </div>
           </div>

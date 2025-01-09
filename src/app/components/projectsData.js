@@ -121,14 +121,14 @@ const ProjectData = [
   },
   {
     id: 4,
-    name: "EazyPay: Payment Gateway Website",
+    name: "CampusPro",
     description: `EazyPay is a payment gateway website that enables users to make
                 payments online. I was responsible for the frontend development of the
                 website, focusing on the user interface and user experience. My
                 contributions included key features such as the payment dashboard,
                 payment history, and more.`,
     image: "/images/homz2_pix.png",
-    url: "https://eazypay.com",
+    // url: "https://eazypay.com",
     technologies: [
       {
         name: "HTML5",
