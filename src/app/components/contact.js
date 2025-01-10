@@ -3,9 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ContactData from "./contactData";
 import Link from "next/link";
-// import SpinLoader from "@/icons/spinLoader";
-import Spinner from "@/icons/spinner";
-import SpinLoader from "@/icons/spinLoader";
+// import Spinner from "@/icons/spinner";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,8 +22,7 @@ const Contact = () => {
 
       return () => clearTimeout(timer);
     }
-  }, [responseMessage,showMessage]);
-
+  }, [responseMessage, showMessage]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -53,7 +50,7 @@ const Contact = () => {
           message: "",
         });
         setResponseMessage("Your message has been sent successfully!");
-        setShowMessage(true)
+        setShowMessage(true);
       } else {
         setResponseMessage(result.message || "Something went wrong.");
       }
@@ -143,9 +140,13 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="border-2 sm:py-2 sm:px-3 p-2 w-fit flex items-center justify-center  font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="border-2 sm:py-2 sm:px-3 p-2 w-fit flex gap-2 items-center justify-center  font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
-              {isLoading && <SpinLoader height='30' width='30' />} Get in touch
+              {isLoading ? (
+                <span className="px-1">Sending...</span>
+              ) : (
+                "Get in touch"
+              )}
             </button>
 
             {showMessage && responseMessage && (

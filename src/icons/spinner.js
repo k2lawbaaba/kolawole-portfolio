@@ -1,11 +1,12 @@
-import React from "react";
-
 const Spinner = () => {
   return (
     <svg
       aria-hidden="true"
-      className="inline w-[20px] h-[20px] mr-3 text-gray-200 animate-spin dark:text-gray-600 fill-white"
-      viewBox="0 0 100 101"
+      className="inline w-[20px] h-[20px] mr-3 text-gray-200 dark:text-gray-600 fill-white"
+      style={{
+        animation: "spin 1s linear infinite",
+      }}
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
