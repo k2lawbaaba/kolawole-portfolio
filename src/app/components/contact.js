@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ContactData from "./contactData";
 import Link from "next/link";
-// import Spinner from "@/icons/spinner";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
