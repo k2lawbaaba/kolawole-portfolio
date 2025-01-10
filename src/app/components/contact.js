@@ -138,11 +138,12 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="border-2 sm:p-3 p-2 w-auto flex gap-2 font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="border-2 sm:p-3 p-2 w-fit flex items-center justify-center gap-2 font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
-              {/* {isLoading && 
-              } */}
+              {isLoading && 
               <Spinner />
+              }
+
               Get in touch
             </button>
 
