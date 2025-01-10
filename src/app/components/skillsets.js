@@ -4,7 +4,7 @@ import { ReactLogo, NextLogo } from "@/icons/react";
 import {CssLogo,TailwindLogo} from "@/icons/css";
 import { HtmlLogo } from "@/icons/html";
 import { IconGithub } from "@/icons/github";
-import { IconNodejs } from "@/icons/nodes";
+import { IconNodejs, GraphQL } from "@/icons/nodes";
 import WordPress from "@/icons/wordpress";
 import { IconMongo } from "@/icons/databases";
 
@@ -69,6 +69,10 @@ const skills = [
     id: 12,
     name: "MongoDB",
     icon: <IconMongo />,
+  },{
+    id: 13,
+    name: "GraphQl",
+    icon: <GraphQL />,
   }
 ];
 

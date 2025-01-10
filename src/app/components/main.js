@@ -1,9 +1,7 @@
-// import Image from "next/image";
-// import Link from "next/link";
-import React from "react";
 import AboutMe from "./aboutMe";
 import Projects from "./projects";
 import Skills from "./skill";
+import Contact from "./contact";
 
 const MainBody = () => {
   return (
@@ -11,6 +9,7 @@ const MainBody = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 };

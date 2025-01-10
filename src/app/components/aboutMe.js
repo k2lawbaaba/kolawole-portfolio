@@ -5,7 +5,7 @@ import React from "react";
 const AboutMe = () => {
   return (
     <section id="about-me" className="w-full sm:py-12 py-5 px-6">
-      <h1 className="font-extrabold text-[40px] text-center text-gray-800 mb-8 font-shantell littleLine relative">
+      <h1 className="font-extrabold sm:text-[35px] text-[30px] text-center text-gray-800 mb-8 font-shantell littleLine relative">
         Hello. Meet your Coder 👋
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10 px- sm:px-28 py-7">
@@ -16,12 +16,13 @@ const AboutMe = () => {
             height={200}
             width={350}
             className="sm:rounded-full shadow-lg  h-[400px] w-[500px] sm:h-[500px] sm:w-[500px] mx-6 sm:mx-0"
+            loading="lazy"
           />
         </div>
 
         <div
           id="intro"
-          className="text-gray-600 space-y-4 text-lg leading-relaxed text-left"
+          className="text-gray-600 space-y-4 text-lg leading-relaxed text-left px-4 sm:px-0"
         >
           <p>
             I’m a{" "}
@@ -42,7 +43,7 @@ const AboutMe = () => {
 
           <p>
             Explore some of my work in the{" "}
-            <Link href="#" className="font-semibold text-gray-700">
+            <Link href="#projects" className="font-semibold text-gray-700">
               Projects
             </Link>{" "}
             section.

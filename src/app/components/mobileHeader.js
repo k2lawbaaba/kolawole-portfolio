@@ -14,7 +14,7 @@ const MobileHeader = ({ setOpen }) => {
           Home
         </Link>
         <Link
-          href="#"
+          href="#projects"
           className="hover:text-teal-500 transition"
           onClick={() => setOpen(false)}
         >

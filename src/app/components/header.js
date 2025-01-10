@@ -25,7 +25,7 @@ const Header = () => {
           <Link href="#" className="test">
             Home
           </Link>
-          <Link href="#" className="test">
+          <Link href="#projects" className="test">
             Projects
           </Link>
           <Link href="" className="test">

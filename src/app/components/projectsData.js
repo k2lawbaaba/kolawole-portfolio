@@ -122,25 +122,31 @@ const ProjectData = [
   {
     id: 4,
     name: "CampusPro",
-    description: `EazyPay is a payment gateway website that enables users to make
-                payments online. I was responsible for the frontend development of the
-                website, focusing on the user interface and user experience. My
-                contributions included key features such as the payment dashboard,
-                payment history, and more.`,
-    image: "/images/homz2_pix.png",
+    description: `CampusPro is a comprehensive platform designed for students to find hostels on their campuses, connect with peers looking to buy or sell items, and enable real estate agents to register and list properties. Students can also post items for sale. I contributed significantly to this project by developing the agent dashboard and login page on the frontend. On the backend, I was responsible for approximately 60% of the implementation, including database management and other core functionalities.`,
+    image: "/images/campusPro.png",
     // url: "https://eazypay.com",
     technologies: [
+     
+     
       {
-        name: "HTML5",
-        icon: "/images/html.svg",
+        name: "MongoDb",
+        icon: "/images/mongodb.svg",
+      },
+      {
+        name: "ExpreeJs",
+        icon: "/images/Express.svg",
       },
       {
         name: "React",
         icon: "/images/react.svg",
       },
       {
-        name: "NextJS",
-        icon: "/images/Nextjs.svg",
+        name: "NodeJs",
+        icon: "/images/nodejs-svg.svg",
+      },
+      {
+        name: "HTML5",
+        icon: "/images/html.svg",
       },
       {
         name: "javascript & ES6",
@@ -151,16 +157,11 @@ const ProjectData = [
         icon: "/images/css.svg",
       },
       {
-        name: "Tailwind",
-        icon: "/images/tailwind-2.svg",
-      },
-      {
         name: "GIT/GITHUB",
         icon: "/images/github.svg",
       },
     ],
-    githubUrl: "https://eazypay.com",
-    duration: "Jan, 2024 - Present",
+    githubUrl: "https://github.com/izygabs/CampusPro.git",
   },
 ];
 
