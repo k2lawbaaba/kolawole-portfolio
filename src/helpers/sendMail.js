@@ -20,7 +20,7 @@ const sendEmail = async (subject, recipientEmail, message) => {
     const mailOptions = {
       from: recipientEmail, 
       to: process.env.EMAIL_ADDRESS2, 
-      subject,
+      subject: `${subject}, ${recipientEmail}`,
       text: message, 
     };
 
