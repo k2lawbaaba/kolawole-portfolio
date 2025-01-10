@@ -3,7 +3,9 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ContactData from "./contactData";
 import Link from "next/link";
+// import SpinLoader from "@/icons/spinLoader";
 import Spinner from "@/icons/spinner";
+import SpinLoader from "@/icons/spinLoader";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,7 +14,7 @@ const Contact = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [responseMessage, setResponseMessage] = useState("");
-  const [showMessage, setShowMessage] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
     if (responseMessage) {
@@ -22,7 +24,9 @@ const Contact = () => {
 
       return () => clearTimeout(timer);
     }
-  }, [responseMessage]);
+  }, [responseMessage,showMessage]);
+
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -49,6 +53,7 @@ const Contact = () => {
           message: "",
         });
         setResponseMessage("Your message has been sent successfully!");
+        setShowMessage(true)
       } else {
         setResponseMessage(result.message || "Something went wrong.");
       }
@@ -138,13 +143,9 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="border-2 sm:p-3 p-2 w-fit flex items-center justify-center gap-2 font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="border-2 sm:py-2 sm:px-3 p-2 w-fit flex items-center justify-center  font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
-              {isLoading && 
-              <Spinner />
-              }
-
-              Get in touch
+              {isLoading && <SpinLoader height='30' width='30' />} Get in touch
             </button>
 
             {showMessage && responseMessage && (

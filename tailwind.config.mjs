@@ -43,7 +43,7 @@ export default {
         move: "move 25s ease-in-out infinite",
         reverseMove: "reverseMove 25s ease-in-out infinite",
         zoom: "zoom 25s ease-in-out infinite",
-        spin: "spin 1s linear infinite", // Define spin animation here
+        spin: "spin 1s linear infinite",
       },
     },
   },
