@@ -7,7 +7,7 @@ const MobileHeader = ({ setOpen }) => {
     <div className="fixed w-screen z-50 top-24 left-2 bg-white flex flex-col items-center justify-center p-8 ">
       <div className="flex flex-col gap-6 text-[20px] font-medium">
         <Link
-          href="#"
+          href="#home"
           className="hover:text-teal-500 transition"
           onClick={() => setOpen(false)}
         >
@@ -21,7 +21,7 @@ const MobileHeader = ({ setOpen }) => {
           Projects
         </Link>
         <Link
-          href="#"
+          href="#contact"
           className="hover:text-teal-500 transition"
           onClick={() => setOpen(false)}
         >

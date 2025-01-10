@@ -10,7 +10,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#f2f6f6] p-8 pb-20 gap-16 sm:px-20 w-full">
+    <div id="home" className="bg-[#f2f6f6] p-8 pb-20 gap-16 sm:px-20 w-full">
       <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] text-[16px] font-[500] w-full">
         <Link href="#" className="rounded-[100%] h-[40px]">
           <Image
@@ -22,13 +22,13 @@ const Header = () => {
           />
         </Link>
         <div className="hidden sm:grid grid-cols-4">
-          <Link href="#" className="test">
+          <Link href="#home" className="test">
             Home
           </Link>
           <Link href="#projects" className="test">
             Projects
           </Link>
-          <Link href="" className="test">
+          <Link href="#contact" className="test">
             Contact
           </Link>
           <Link href="#about-me" className="test">
