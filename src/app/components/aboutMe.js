@@ -4,8 +4,8 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section id="about-me" className="w-full sm:py-12 py-5 px-6">
-      <h1 className="font-extrabold sm:text-[35px] text-[30px] text-center text-gray-800 mb-8 font-shantell littleLine relative">
+    <section id="about-me" className="w-full sm:py-12 py-5 px-6 bg-white text-black dark:bg-black dark:text-white dark:border-b-slate-800 dark:border-b-[0.1px]">
+      <h1 className="font-extrabold sm:text-[35px] text-[30px] text-center bg-white text-gray-800 dark:bg-black dark:text-white mb-8 font-shantell littleLine relative">
         Hello. Meet your Coder 👋
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10 px- sm:px-28 py-7">
@@ -22,11 +22,11 @@ const AboutMe = () => {
 
         <div
           id="intro"
-          className="text-gray-600 space-y-4 text-lg leading-relaxed text-left px-4 sm:px-0"
+          className="text-gray-600 bg-white  dark:bg-black dark:text-gray-300 space-y-4 text-lg leading-relaxed text-left px-4 sm:px-0"
         >
           <p>
             I’m a{" "}
-            <span className="font-semibold text-gray-700">
+            <span className="font-semibold text-gray-700 bg-white  dark:bg-black dark:text-gray-300">
               Fullstack Web Developer
             </span>
             . From transforming a piece of clothing into a perfectly tailored
@@ -43,7 +43,7 @@ const AboutMe = () => {
 
           <p>
             Explore some of my work in the{" "}
-            <Link href="#projects" className="font-semibold text-gray-700">
+            <Link href="#projects" className="font-semibold text-gray-700 bg-white  dark:bg-black dark:text-gray-300">
               Projects
             </Link>{" "}
             section.
@@ -68,7 +68,8 @@ const AboutMe = () => {
             </Link>
 
             <Link
-              href="/doc/Kolawole_Abiodun_Michael_CV.pdf"
+              href="https://docs.google.com/document/d/1_arHUBHGw4wvxG-hxLG1KGgfSgprZGJTe0cI-eQcsM0/edit?usp=sharing"
+              // href="/doc/Kolawole_Abiodun_Michael_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 sm:p-3 p-2 font-bold rounded-[10px] border-[#7144d2] bg-[#7144d2] text-white  transition-transform duration-300 ease-in-out transform hover:scale-105"

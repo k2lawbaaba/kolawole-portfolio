@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-page-custom-font */
-import { Geist, Geist_Mono } from "next/font/google";
+import { ThemeProviders } from "./components/ThemeProvider";
 import "./globals.css";
-
-
+// import { AppProps } from 'next/app'
 export const metadata = {
   title: "Kolawole Abiodun",
   description: "Kolawole Abiodun Michael Portfolio",
@@ -27,10 +25,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`font-montserrat antialiased m-0 text-center w-full`}
+        className={`font-montserrat antialiased m-0 text-center w-full prose dark:prose-dark bg-white text-black dark:bg-black dark:text-white`}
       >
-        {children}
+        <ThemeProviders attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProviders>
       </body>
+      
     </html>
   );
 }

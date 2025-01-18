@@ -62,14 +62,14 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full sm:py-12 py-5 px-6">
+    <div id="contact" className="w-full sm:py-12 py-5 px-6 bg-white  dark:bg-black dark:text-gray-300">
       <section className="space-y-12">
         <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-3 place-content-center sm:px-12">
           <div className={`p-6 text-left space-y-4`}>
-            <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center bg-opacity-35 bg-blend-multiply bg-gray-300 w-fit px-3 shadow-lg  text-gray-800 mb-8 font-shantell relative littleLine">
+            <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center bg-opacity-35 bg-blend-multiply bg-gray-300 w-fit px-3 shadow-lg  text-gray-800   dark:bg-gray-900 dark:text-gray-300 mb-8 font-shantell relative littleLine">
               Let&apos;s Connect 🧑‍🤝‍🧑🤝
             </h1>
-            <div className="text-gray-600 space-y-4 text-lg leading-relaxed text-left pt-3">
+            <div className="text-gray-600 bg-white  dark:bg-black dark:text-gray-400 space-y-4 text-lg leading-relaxed text-left pt-3">
               <p>
                 I’m always excited to connect and collaborate on innovative
                 software projects. Whether you have a question, want to discuss
@@ -92,7 +92,7 @@ const Contact = () => {
                       width={50}
                       alt={contact.name}
                       loading="lazy"
-                      className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                      className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer bg-white  dark:bg-black dark:text-gray-300"
                     />
                   </Link>
                 ))}

@@ -28,8 +28,8 @@ const Projects = () => {
   }, [inView]);
 
   return (
-    <div id="projects" className="w-full sm:py-12 py-5 px-6 bg-slate-50">
-      <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center text-gray-800 mb-8 font-shantell relative littleLine">
+    <div id="projects" className="w-full sm:py-12 py-5 px-6 bg-slate-50 text-black dark:bg-black dark:text-white dark:border-b-slate-800 dark:sm:mb-7 dark:border-b-[0.1px]">
+      <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center  mb-8 font-shantell relative littleLine">
         Projects and Work Experiences
       </h1>
 
@@ -51,12 +51,12 @@ const Projects = () => {
               <span className="font-semibold italic text-[14px]">
                 {project.duration}
               </span>
-              <p className="text-[18px] leading-9 my-2 text-gray-600">
+              <p className="text-[18px] leading-9 my-2 text-gray-600  dark:bg-black dark:text-gray-300">
                 {project.description}
               </p>
               <div className="grid sm:grid-cols-10 grid-cols-5 gap-2">
                 {project.technologies.map((tech, index) => (
-                  <div key={index} className="w-[40px] h-[40px]">
+                  <div key={index} className="w-[35px] h-[35px]">
                     <Image
                       src={tech.icon}
                       height={50}
@@ -75,7 +75,7 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-2 p-2 font-bold border-gray-500 text-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    className="border-2 p-2 font-bold border-gray-500 text-gray-700  dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
                   >
                     LIVE SITE
                   </Link>
@@ -85,7 +85,7 @@ const Projects = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border-2 p-2 font-bold border-gray-500 text-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    className="border-2 p-2 font-bold border-gray-500 text-gray-700   dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
                   >
                     GITHUB
                   </Link>
