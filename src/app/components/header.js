@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] text-[16px] font-[500] w-full">
         <Link href="#" className="rounded-[100%] h-[40px]">
           <Image
-            src="/images/Abbeey.png"
+            src="/images/Abbeey.jpg"
             alt="image"
             height={50}
             width={50}

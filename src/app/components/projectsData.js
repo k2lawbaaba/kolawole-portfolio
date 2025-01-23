@@ -22,7 +22,7 @@ const ProjectData = [
       },
       {
         name: "NextJS",
-        icon: "/images/Nextjs.svg",
+        icon: "/images/Next2.svg",
       },
       {
         name: "javascript & ES6",
@@ -35,7 +35,7 @@ const ProjectData = [
       },
       {
         name: "GIT/GITHUB",
-        icon: "/images/github.svg",
+        icon: "/images/github-gray2.svg",
       },
       {
         name: "Tailwind",
@@ -72,7 +72,7 @@ const ProjectData = [
       },
       {
         name: "GIT/GITHUB",
-        icon: "/images/github.svg",
+       icon: "/images/github-gray2.svg",
       },
     ],
     // githubUrl: "",
@@ -94,7 +94,7 @@ const ProjectData = [
       },
       {
         name: "MongoDb",
-        icon: "/images/mongodb.svg",
+        icon: "/images/mongodb2.svg",
       },
       {
         name: "javascript & ES6",
@@ -114,7 +114,7 @@ const ProjectData = [
       },
       {
         name: "GIT/GITHUB",
-        icon: "/images/github.svg",
+        icon: "/images/github-gray2.svg",
       },
     ],
     githubUrl: "https://github.com/k2lawbaaba/Banking-App-Server.git",
@@ -124,13 +124,13 @@ const ProjectData = [
     name: "CampusPro",
     description: `CampusPro is a comprehensive platform designed for students to find hostels on their campuses, connect with peers looking to buy or sell items, and enable real estate agents to register and list properties. Students can also post items for sale. I contributed significantly to this project by developing the agent dashboard and login page on the frontend. On the backend, I was responsible for approximately 60% of the implementation, including database management and other core functionalities.`,
     image: "/images/campusPro.png",
-    // url: "https://eazypay.com",
+    // url: "",
     technologies: [
      
      
       {
         name: "MongoDb",
-        icon: "/images/mongodb.svg",
+        icon: "/images/mongodb2.svg",
       },
       {
         name: "ExpreeJs",
@@ -158,7 +158,7 @@ const ProjectData = [
       },
       {
         name: "GIT/GITHUB",
-        icon: "/images/github.svg",
+        icon: "/images/github-gray2.svg",
       },
     ],
     githubUrl: "https://github.com/izygabs/CampusPro.git",

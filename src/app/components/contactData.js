@@ -16,7 +16,7 @@ const ContactData = [
   {
     id: 3,
     link: "https://github.com/k2lawbaaba",
-    icon: "/images/github.svg",
+    icon: "/images/github-3.svg",
     name: "github"
 
   },

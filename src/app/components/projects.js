@@ -28,7 +28,7 @@ const Projects = () => {
   }, [inView]);
 
   return (
-    <div id="projects" className="w-full sm:py-12 py-5 px-6 bg-slate-50 text-black dark:bg-black dark:text-white dark:border-b-slate-800 dark:sm:mb-7 dark:border-b-[0.1px]">
+    <div id="projects" className="w-full sm:py-12 py-5 px-6 bg-slate-50 text-black dark:bg-transparent dark:text-white dark:border-b-slate-800 dark:sm:mb-7 dark:border-b-[0.1px]">
       <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center  mb-8 font-shantell relative littleLine">
         Projects and Work Experiences
       </h1>
