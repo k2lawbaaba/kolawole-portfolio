@@ -36,6 +36,10 @@ body {
   background-image: var(--background-image);
 }
 
+.slick-dots {
+  padding: 0 60px 0px 0px !important ;
+ 
+}
 
 .littleLine::after {
   content: "";

@@ -4,7 +4,7 @@ import React from "react";
 
 const MobileHeader = ({ setOpen }) => {
   return (
-    <div className="fixed w-screen z-50 top-24 left-2 bg-white flex flex-col items-center justify-center p-8 ">
+    <div className="fixed w-screen z-50 top-24 left-0 bg-white flex flex-col items-start h-screen justify-start p-8 ">
       <div className="flex flex-col gap-6 text-[20px] font-medium">
         <Link
           href="#home"

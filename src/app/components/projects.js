@@ -28,87 +28,95 @@ const Projects = () => {
   }, [inView]);
 
   return (
-    <div id="projects" className="w-full sm:py-12 py-5 px-6 bg-slate-50 text-black dark:bg-transparent dark:text-white dark:border-b-slate-800 dark:sm:mb-7 dark:border-b-[0.1px]">
-      <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center  mb-8 font-shantell relative littleLine">
-        Projects and Work Experiences
-      </h1>
+    <div
+      id="projects"
+      className="w-full bg-slate-50 text-black dark:bg-transparent dark:text-white dark:border-b-slate-800 dark:sm:mb-7 dark:border-b-[0.1px]"
+    >
+      <div
+        id="projects"
+        className="w-full sm:px-10 lg:px-16 xl:px-20 mx-auto max-w-[1280px] sm:py-12 py-5 px-6"
+      >
+        <h1 className="font-extrabold sm:text-[35px] text-[25px] text-center  mb-8 font-shantell relative littleLine">
+          Projects and Work Experiences
+        </h1>
 
-      <section className="sm:space-y-12 ">
-        {visibleProjects.map((project, ind) => (
-          <div
-            className="grid sm:grid-cols-2 grid-cols-1 sm:gap-3 place-content-center sm:px-12"
-            key={ind}
-            ref={ind === visibleProjects.length - 1 ? ref : null} // Attach ref to the last visible item
-          >
+        <section className="sm:space-y-12 ">
+          {visibleProjects.map((project, ind) => (
             <div
-              className={`p-6 text-left space-y-4 order-2  ${
-                ind % 2 !== 0 ? "sm:order-1" : "sm:order-2"
-              }`}
+              className="grid sm:grid-cols-2 grid-cols-1 sm:gap-3 place-content-center sm:px-12"
+              key={ind}
+              ref={ind === visibleProjects.length - 1 ? ref : null} // Attach ref to the last visible item
             >
-              <h1 className="font-bold text-[22px] font-montserrat">
-                {project.name}
-              </h1>
-              <span className="font-semibold italic text-[14px]">
-                {project.duration}
-              </span>
-              <p className="text-[18px] leading-9 my-2 text-gray-600  dark:bg-black dark:text-gray-300">
-                {project.description}
-              </p>
-              <div className="grid sm:grid-cols-10 grid-cols-5 gap-2">
-                {project.technologies.map((tech, index) => (
-                  <div key={index} className="w-[35px] h-[35px]">
-                    <Image
-                      src={tech.icon}
-                      height={50}
-                      width={50}
-                      alt={tech.name}
-                      title={tech.name}
-                      loading="lazy"
-                      className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
-                    />
-                  </div>
-                ))}
+              <div
+                className={`p-6 text-left space-y-4 order-2  ${
+                  ind % 2 !== 0 ? "sm:order-1" : "sm:order-2"
+                }`}
+              >
+                <h1 className="font-bold text-[22px] font-montserrat">
+                  {project.name}
+                </h1>
+                <span className="font-semibold italic text-[14px]">
+                  {project.duration}
+                </span>
+                <p className="text-[18px] leading-9 my-2 text-gray-600  dark:bg-black dark:text-gray-300">
+                  {project.description}
+                </p>
+                <div className="grid sm:grid-cols-10 grid-cols-5 gap-2">
+                  {project.technologies.map((tech, index) => (
+                    <div key={index} className="w-[35px] h-[35px]">
+                      <Image
+                        src={tech.icon}
+                        height={50}
+                        width={50}
+                        alt={tech.name}
+                        title={tech.name}
+                        loading="lazy"
+                        className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                      />
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-8 mt-4">
+                  {project.url && (
+                    <Link
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border-2 p-2 font-bold border-gray-500 text-gray-700  dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    >
+                      LIVE SITE
+                    </Link>
+                  )}
+                  {project.githubUrl && (
+                    <Link
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border-2 p-2 font-bold border-gray-500 text-gray-700   dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
+                    >
+                      GITHUB
+                    </Link>
+                  )}
+                </div>
               </div>
-              <div className="flex items-center gap-8 mt-4">
-                {project.url && (
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 p-2 font-bold border-gray-500 text-gray-700  dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
-                  >
-                    LIVE SITE
-                  </Link>
-                )}
-                {project.githubUrl && (
-                  <Link
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 p-2 font-bold border-gray-500 text-gray-700   dark:bg-black dark:text-gray-300 transition-transform duration-300 ease-in-out transform hover:scale-105"
-                  >
-                    GITHUB
-                  </Link>
-                )}
+              <div
+                className={`flex items-start justify-start order-1 ${
+                  ind % 2 === 0 ? "sm:order-1" : "sm:order-2"
+                }`}
+              >
+                <Image
+                  src={project.image}
+                  height={600}
+                  width={600}
+                  alt={project.name || "Project Image"}
+                  loading="lazy"
+                  className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+                />
               </div>
             </div>
-            <div
-              className={`flex items-start justify-start order-1 ${
-                ind % 2 === 0 ? "sm:order-1" : "sm:order-2"
-              }`}
-            >
-              <Image
-                src={project.image}
-                height={600}
-                width={600}
-                alt={project.name || "Project Image"}
-                loading="lazy"
-                className="transition-transform duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
-              />
-            </div>
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
+      </div>
     </div>
   );
 };

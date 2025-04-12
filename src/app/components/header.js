@@ -11,8 +11,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div id="home" className="bg-[#f2f6f6] p-8 pb-20 gap-16 sm:px-20 w-full  dark:bg-black dark:text-gray-300 dark:border-b-slate-800 dark:border-b-[0.1px]">
-      <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] text-[16px] font-[500] w-full">
+    <div
+      id="home"
+      className="bg-[#f2f6f6] px-8 pb-20 pt-8 gap-16 w-full  dark:bg-black dark:text-gray-300 dark:border-b-slate-800 dark:border-b-[0.1px]"
+    >
+      <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] sm:px-10 lg:px-16 xl:px-20 text-[16px] font-[500] w-full max-w-[1280px] mx-auto">
         <Link href="#" className="rounded-[100%] h-[40px]">
           <Image
             src="/images/Abbeey.jpg"
@@ -48,11 +51,11 @@ const Header = () => {
             About Me
           </Link>
         </div>
-       
-        <div className="fixed right-9">
+
+        <div className="fixed z-50 top-8 right-[max(calc(50%-640px),1rem)]">
           <DarkModeToggle />
         </div>
-       
+
         <div
           onClick={() => setOpen(!open)}
           className="sm:hidden border relative cursor-pointer"
@@ -63,8 +66,8 @@ const Header = () => {
         {/* open the menu  */}
         {open && <MobileHeader setOpen={setOpen} />}
       </div>
-      
-      <div className="">
+
+      <div className="w-full max-w-[1280px] mx-auto sm:px-10 lg:px-16 xl:px-20">
         <Image
           id="top_cloud"
           src="/images/cloud.png"
