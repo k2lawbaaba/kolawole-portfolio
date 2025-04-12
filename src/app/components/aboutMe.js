@@ -77,7 +77,7 @@ const AboutMe = () => {
               </Link>
 
               <Link
-                href="https://docs.google.com/document/d/1_arHUBHGw4wvxG-hxLG1KGgfSgprZGJTe0cI-eQcsM0/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1_arHUBHGw4wvxG-hxLG1KGgfSgprZGJTe0cI-eQcsM0/edit?pli=1&tab=t.0"
                 // href="/doc/Kolawole_Abiodun_Michael_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
