@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex items-center justify-between sm:grid grid-cols-2 sm:text-[24px] sm:px-10 lg:px-16 xl:px-20 text-[16px] font-[500] w-full max-w-[1280px] mx-auto">
         <Link href="#" className="rounded-[100%] h-[40px]">
           <Image
-            src="/images/Abbeey.jpg"
+            src="https://fip6wxdyr5vppwsv.public.blob.vercel-storage.com/myprofilephoto/abbeey-GzCSlN4kl93806UBcTWp680PmQRPP9.ico"
             alt="image"
             height={50}
             width={50}

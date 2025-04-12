@@ -10,7 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <link rel="icon" href="/images/Abbeey.ico"></link>
+        <link
+          rel="icon"
+          href="https://fip6wxdyr5vppwsv.public.blob.vercel-storage.com/myprofilephoto/abbeey-GzCSlN4kl93806UBcTWp680PmQRPP9.ico"
+        ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
           rel="stylesheet"
@@ -31,7 +34,6 @@ export default function RootLayout({ children }) {
           {children}
         </ThemeProviders>
       </body>
-      
     </html>
   );
 }
