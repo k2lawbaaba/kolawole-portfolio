@@ -51,7 +51,7 @@ const ProjectData = [
     name: "Trucrete Solutions Limited: Engineering Company Website",
     description: `A dynamic construction management firm, that specializes in infrastructure development, engineering services, procurement, facility management, and general contracting.`,
     image: "/images/trucrete.png",
-    url: "https://trucrete-solutions-limited.vercel.app/",
+    url: "https://trucreteng.com/",
     technologies: [
       {
         name: "HTML5",
